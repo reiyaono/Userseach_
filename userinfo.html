@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="original.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel panel-info">
+      <div class="panel-heading">ユーザー検索</div>
+    </div>
+    <button type="button" class="btn btn-danger" style="width:200px;margin-right:10px;margin-left:5px;margin-top:12px;margin-bottom:12px;">ロックする</button>
+    <div class="panel panel-info">
+      <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>プロフィール</div>
+    </div>
+    <span style="color:#ff0000;">*</span>必須項目
+
+    <!-- ユーザー情報テーブル -->
+    <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>ID</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>メールアドレス</td>
+        <td>test@docomo.ne.jp</td>
+      </tr>
+      <tr>
+        <td><span style="color:#ff0000;">*</span>名前</td>
+        <td><input class="form-control" value="おの"></td>
+      </tr>
+      <tr>
+        <td><span style="color:#ff0000;">*</span>誕生日</td>
+        <td><input class="form-control" value="1995-08-17"></td>
+      </tr>
+      <tr>
+        <td>性別</td>
+        <td><input type="radio" name="example" value="サンプル" checked="checked"> 男性 <input type="radio" name="example" value="サンプル"> 女性 </td>
+      </tr>
+      <tr>
+        <td><span style="color:#ff0000;">*</span>電話番号</td>
+        <td><input class="form-control" value="09011111111"></td>
+      </tr>
+      <tr>
+        <td><span style="color:#ff0000;">*</span>郵便番号</td>
+        <td><input class="form-control" value="2110002"></td>
+      </tr>
+      <tr>
+        <td>都道府県</td>
+        <td><select class="form-control"><option>北海道</option><option>青森県</option><option>神奈川県</option><select></td>
+      </tr>
+      <tr>
+        <td>市区町村</td>
+        <td><select class="form-control"><option>札幌市</option><option>釧路市</option><option>八戸市</option><select></td>
+      </tr>
+      <tr>
+        <td>住所</td>
+        <td><input class="form-control"></td>
+      </tr>
+      <tr>
+        <td>newsletter</td>
+        <td><input type="checkbox" class="form-control"></td>
+      </tr>
+      <tr>
+        <td>備考</td>
+        <td><textarea class="form-control"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- 銀行口座テーブル -->
+  <div class="panel panel-info">
+    <div class="panel-heading">銀行口座情報</div>
+  </div>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>銀行名</td>
+        <td>あああ銀行</td>
+      </tr>
+      <tr>
+        <td>支店名</td>
+        <td>あああ出張所</td>
+      </tr>
+      <tr>
+        <td>支店番号</td>
+        <td>111</td>
+      </tr>
+      <tr>
+        <td>口座種別</td>
+        <td>普通</td>
+      </tr>
+      <tr>
+        <td>口座番号</td>
+        <td>1111111</td>
+      </tr>
+      <tr>
+        <td>口座名称カナ</td>
+        <td>オノアアアア</td>
+      </tr>
+    </tbody>
+ </table>
+
+  <button type="button" class="btn btn-danger pull-right" style="width:200px;margin-bottom:12px;">更新</button>
+    <a href="manage.html">戻る</a>
+  </div>
+</body>
+</html>

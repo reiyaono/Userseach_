@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>管理画面</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="original.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  	<div class="row">
+      <!-- サイドバーメニュー -->
+    		<div class="col-sm-4 col-md-3 sidebar" style="margin-top:12px;">
+          <div class="list-group">
+              <span href="#" class="list-group-item active">
+                  メニュー
+                  <span class="pull-right" id="slide-submenu">
+                      <i class="fa fa-times"></i>
+                  </span>
+              </span>
+              <a href="manage.html" class="list-group-item">
+                  <i class="fa fa-comment-o"></i>ユーザー検索
+              </a>
+              <a href="#" class="list-group-item">
+                  <i class="fa fa-search"></i> 追加機能
+              </a>
+              <a href="#" class="list-group-item">
+                  <i class="fa fa-user"></i> 追加機能
+              </a>
+              <a href="#" class="list-group-item">
+                  <i class="fa fa-folder-open-o"></i> 追加機能
+              </a>
+              <a href="#" class="list-group-item">
+                  <i class="fa fa-bar-chart-o"></i> 追加機能
+              </a>
+              <a href="login.html" class="list-group-item">
+                  <i class="fa fa-envelope"></i> ログイン画面
+              </a>
+        </div>
+      </div>
+      <!-- ここから右側 -->
+      <div class="col-md-8" style="margin-top:12px;">
+        <div class="panel panel-info">
+          <div class="panel-heading">ユーザー検索</div>
+        </div>
+        <!-- 折りたたみ検索画面 -->
+        <div class="panel-group">
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title" data-toggle="collapse" href="#collapse1">
+                 <a><span class="glyphicon glyphicon-search"></span> 絞り込み検索</a>
+               </h4>
+             </div>
+             <div id="collapse1" class="panel-collapse collapse">
+               <form class="form-horizontal">
+                  <div class="form-group">
+                      <div class="col-xs-9 form-inline">
+                          <input type="text" class="form-control col-xs-2 form_mg" placeholder="ID">
+                          <input type="text" class="form-control col-xs-2 form_mg" placeholder="メールアドレス">
+                          <input type="text" class="form-control col-xs-2 form_mg" placeholder="名前">
+                          <input type="text" class="form-control col-xs-2 form_mg" placeholder="電話番号">
+                          <button type="button" class="btn btn-primary form_mg">検索</button>
+                      </div>
+                  </div>
+              </form>
+             </div>
+           </div>
+         </div>
+        <p>173件中1 - 20件表示しています。</p>
+        <!-- 検索結果のテーブル -->
+        <table class="table table-hover table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>登録状況</th>
+              <th>名前</th>
+              <th>メールアドレス</th>
+              <th>電話番号</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>登録</td>
+              <td><a href="userinfo.html">おの</a></td>
+              <td><a href="userinfo.html">test@docomo.ne.jp</a></td>
+              <td><a href="userinfo.html">09011111111</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>登録</td>
+              <td><a href="#">おの2</a></td>
+              <td><a href="#">testtest@docomo.ne.jp</a></td>
+              <td><a href="#">09011111111</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- ページネーション -->
+        <div class="text-center">
+          <ul class="pagination pagination-lg">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </div>
+      </div>
+  	</div>
+</body>
+</html>
